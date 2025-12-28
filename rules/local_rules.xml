@@ -1,0 +1,7 @@
+<group name="local,syslog,sshd,">
+  <rule id="100002" level="10">
+    <match>session opened for user root</match>
+    <description>ALERTA CRÍTICO: Sessão ROOT aberta detectada!</description>
+    <group>security_violation,privilege_escalation,</group>
+  </rule>
+</group>
