@@ -24,11 +24,14 @@ Ingestão: O Logstash lê o arquivo JSON em tempo real.
 Normalização: O dado é estruturado em campos (JSON) para facilitar a busca e correlação.
 
 🔍 Evidência de Funcionamento
-Nas imagens abaixo, é possível observar o pipeline em ação, capturando uma violação de segurança real onde o AppArmor negou acesso ao processo do Firefox:
+Nas imagens abaixo, é possível observar o pipeline em ação, capturando violações de segurança reais (AppArmor DENIED) processadas pelo Logstash em tempo real:
 
-Nota: Os logs demonstram a regra 52002 (Nível 3) sendo disparada, fornecendo detalhes como PID, comando e recurso negado.
+![Logs Estruturados no Logstash 1](d33362e0-c2af-472e-9d1c-9b663313a313.png)
+![Logs Estruturados no Logstash 2](2.png)
+![Logs Estruturados no Logstash 3](3.png)
+![Logs Estruturados no Logstash 3](4.png)
 
-(Dica: Insira aqui as imagens que você salvou, como a image_f20364.png e image_f2005c.png que mostram o log estruturado).
+> **Nota:** Os logs demonstram a regra 52002 (Nível 3) sendo disparada, fornecendo detalhes críticos para investigação como PID, comando (comm) e o recurso negado..
 
 ⚙️ Implementação Técnica
 Durante o projeto, realizei as seguintes tarefas críticas:
