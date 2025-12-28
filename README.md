@@ -79,6 +79,11 @@ O dashboard abaixo demonstra o pipeline em plena operação, processando milhare
 ![Dashboard de Sucesso](tela_dash2.png)
 > **Legenda**: Visualização do Discover com 4,120 hits, confirmando a ingestão de dados estruturados e a resolução dos gargalos de memória.
 
+### 📂 Arquivos de Configuração
+Os arquivos técnicos utilizados neste laboratório podem ser encontrados nos links abaixo:
+* [Regras Customizadas (local_rules.xml)](./rules/local_rules.xml)
+* [Pipeline do Logstash (soc-logs.conf)](pipelines/soc-logs.conf)
+
 ### 💡 Aprendizados Avançados
 Este projeto reforçou minha capacidade de depurar falhas de ingestão em sistemas complexos e entender como o ajuste de parâmetros de baixo nível (como memória de heap e plugins de saída) é vital para a sustentação de um SOC profissional.
 
