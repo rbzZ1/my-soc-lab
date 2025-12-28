@@ -44,5 +44,12 @@ Troubleshooting de Conectividade: Validação de portas de rede (netstat/ss) e t
 
 Desenvolvimento de Pipeline: Criação de arquivos de configuração .conf para roteamento de dados via TCP e File Input.
 
+### 🛡️ Engenharia de Detecção: Escalação de Privilégios
+Para validar a capacidade de resposta a incidentes críticos, configurei uma regra personalizada para detectar o uso do comando `sudo su`.
+
+![Detecção de Sessão Root](5.png)
+
+> **Análise do Alerta:** O log acima demonstra a detecção em tempo real de uma sessão root sendo aberta. Este tipo de monitoramento é vital para identificar possíveis movimentações laterais ou uso indevido de privilégios administrativos.
+
 💡 Aprendizados
 Este projeto reforçou minha capacidade de depurar falhas de ingestão de dados e entender como os metadados (timestamp, host, rule_id) são fundamentais para a triagem de incidentes em um ambiente de SOC profissional.
